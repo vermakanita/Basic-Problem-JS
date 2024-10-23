@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="ip1" type="number" placeholder="enter number ">
+    <button onclick="fact()"> click on</button><br>
+    <input id="op1">
+    <script> 
+    function fact(){
+        let n = parseInt(document.getElementById("ip1").value);
+        let fact=1;
+        for(let i=1;i<=n;i++){
+            fact=i*fact;
+        }
+        document.getElementById("op1").value=fact;
+
+    }
+</script>
+</body>
+</html>
