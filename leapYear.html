@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="ip1" type="number" placeholder="enter year">
+    <button onclick="leapyear()">click</button> <br>
+    <input id="op1">
+    <script>
+        
+        function leapyear(){
+            let n=parseInt(document.getElementById("ip1").value);
+            if(n%4==0){
+                document.getElementById("op1").value="leap year";
+            }
+            else{
+                document.getElementById("op1").value="not leap year";
+            }
+        }
+    </script>
+</body>
+</html>
