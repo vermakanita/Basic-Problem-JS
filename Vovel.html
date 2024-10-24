@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="ip1" type="text" placeholder="enter string">
+    <button onclick="vowels()">show result</button> <br>
+    <input id="op1">
+    <script>
+        function vowels(){
+            let j=0;
+            count=0;
+            let str=document.getElementById("ip1").value;
+            for(let i=0;i<str.length;i++){
+                j=str.charAt(i);
+
+            if(j=='a'||j=='e'|| j=='i'||j=='o'||j=='u'){
+                count++;
+                }
+                document.getElementById("op1").value=count; 
+
+        }
+            
+        }
+    </script>
+</body>
+</html>
