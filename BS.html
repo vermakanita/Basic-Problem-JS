@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+    <h1> <b>search elemnet </b></h1>
+   
+   <input id="input" type="Number">
+   <button onclick="BinarySearch()">Search no</button>
+   <p id="search2">       </p>
+    <!-- <input button="button" onclick="BinarySearch()">submit</input>  -->
+    <!-- <script src="BinarySearch.js"></script> -->
+     <script>
+
+function BinarySearch(){
+let s=0;
+let i,flag=0,e,m;
+let a=[20,59,67,89,35,67,89];
+e=a.length-1;
+let search1=document.getElementById("input").value;
+
+for(i=0;i<a.length;i++){
+    m=parseInt((s+e)/2);
+    if(search1==a[m]){
+        flag=1;
+         break;
+    }
+    else if(search1>a[m]){
+
+        s=m+1;
+
+    }
+    else{
+        e=m-1;
+    }
+}
+if(flag==1){
+    document.getElementById("search2").innerHTML=search1+"found"
+}
+else{
+document.getElementById("search2").innerHTML=search1+"not found"
+    
+}
+}
+
+
+    
+     </script>
+</body>
+</html>
